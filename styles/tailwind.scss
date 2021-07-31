@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Archivo';
+    src: url('./fonts/Archivo/Archivo-Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Archivo';
+    src: url('./fonts/Archivo/Archivo-Medium.ttf') format('truetype');
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: 'Archivo';
+    src: url('./fonts/Archivo/Archivo-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+  }
+
+  @font-face {
+    font-family: 'Archivo';
+    src: url('./fonts/Archivo/Archivo-Bold.ttf') format('truetype');
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'Heebo';
+    src: url('./fonts/Heebo/Heebo-Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Heebo';
+    src: url('./fonts/Heebo/Heebo-Medium.ttf') format('truetype');
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: 'Heebo';
+    src: url('./fonts/Heebo/Heebo-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+  }
+
+  @font-face {
+    font-family: 'Heebo';
+    src: url('./fonts/Heebo/Heebo-Bold.ttf') format('truetype');
+    font-weight: 700;
+  }
+}
