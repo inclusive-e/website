@@ -1,15 +1,13 @@
 import MainLayout from "./components/MainLayout";
-import Tagline from "./components/Tagline";
 
 export default function Home() {
   return (
     <MainLayout>
-      <div>
-        <Tagline alt text="The quick brown fox jumps over the lazy dog." />
-        <p>
-          After the installation is complete, follow the instructions to start the development server. Try editing pages/index.js and see the result on your browser.
-        </p>
-        <button className="btn">Button</button>
+      <div className="h-screen">
+        <div className="flex flex-col justify-center items-center h-full">
+          <span className="text-6xl my-1 font-semibold">Inclusive</span>
+          <span className="text-lg font-thin my-1">Coming soon ...</span>
+        </div>
       </div>
     </MainLayout>
   )

@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
   }, [])
 
   return (
-    <div className="mh-screen border-2 dark:bg-background dark:text-primary font-primary">
+    <div className="mh-screen dark:bg-background dark:text-primary font-primary">
       <Component {...pageProps} />
     </div>
   )
