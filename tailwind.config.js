@@ -7,17 +7,17 @@ module.exports = {
   theme: {
     extend: {
       colors: { 
-        'primary': '#F4F3EA',
-        'secondary': '#CBD6EC',
-        'accent': '#4DEEE2',
-        'background': '#0A1A2D',
-        'btn-background': '#3B4857',
-        'btn-color': '#CED1D5'
+        'd-primary-text': '#F4F3EA',
+        'd-secondary-text': '#CBD6EC',
+        'd-accent': '#4DEEE2',
+        'd-background': '#0A1A2D',
+        'd-button-background': '#3B4857',
+        'd-button-text': '#CED1D5',
       }
     },
     fontFamily: {
-      'primary': ['Heebo'],
-      'secondary': ['Archivo']
+      'primary': ['Heebo', 'sans-serif'],
+      'secondary': ['Archivo', 'sans-serif']
     }
   },
   variants: {

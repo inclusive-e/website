@@ -3,10 +3,12 @@ import MainLayout from "./components/MainLayout";
 export default function Home() {
   return (
     <MainLayout>
-      <div className="h-screen">
-        <div className="flex flex-col justify-center items-center h-full">
-          <span className="text-6xl my-1 font-semibold">Inclusive</span>
-          <span className="text-lg font-thin my-1">Coming soon ...</span>
+      <div className="mh-screen">
+        <div className="font-secondary font-bold">
+          Life advice looking through a window.
+        </div>
+        <div>
+          Life advice looking through a window, staring out the window.
         </div>
       </div>
     </MainLayout>
