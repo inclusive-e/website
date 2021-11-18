@@ -3,7 +3,31 @@ import { Tiny, MainLayout, Divider, Text, Heading, SubHeading } from "./componen
 export default function Home() {
   return (
     <MainLayout>
-      <Divider />
+      <div className="text-center border-dashed border mt-3 mb-6">
+        <Text>
+          Navbar
+        </Text>
+      </div>
+      <div className="lg:flex lg:flex-row">
+        <div className="lg:flex-1">
+          <Text>
+            PMF image
+          </Text>
+        </div>
+        <div className="lg:flex-1">
+          <Text>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          </Text>
+          <div className="mt-5">
+            <Tiny>
+              We Are Hiring!
+            </Tiny>
+          </div>
+        </div>
+      </div>
+      <div className="my-6">
+        <Divider />
+      </div>
       <div className="lg:w-9/12">
         <Tiny>
           Do good work.
@@ -12,9 +36,6 @@ export default function Home() {
           Life advice looking through a window. Together.
         </Heading>
         <div className="md:w-10/12">
-          <SubHeading>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          </SubHeading>
           <Text>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
           </Text>
@@ -50,7 +71,34 @@ export default function Home() {
           </Text>
         </div>
       </div>
-      <Divider />
+      <div className="my-6">
+        <Divider />
+      </div>
+      <div className="md:w-8/12 mx-auto">
+        <div className="text-center">
+          <SubHeading>
+            Lorem ipsum dolor sit amet, <br/> consectetur.
+          </SubHeading>
+          <Tiny>
+            Lorem Ipsum si dolor.
+          </Tiny>
+          <div>
+            <Text>Form</Text>
+          </div>
+          <div>
+            <button className="py-3 px-6 dark:bg-d-button-background dark:text-d-button-text font-bold rounded-sm">Get In touch!</button>
+            <Tiny>Lorem ipsum si.</Tiny>
+          </div>
+        </div>
+      </div>
+      <div className="my-6">
+        <Divider />
+      </div>
+      <div className="border py-8">
+        <Text>
+        footer
+        </Text>
+      </div>
     </MainLayout>
   )
 }
