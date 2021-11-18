@@ -18,6 +18,17 @@ module.exports = {
     fontFamily: {
       'primary': ['Heebo', 'sans-serif'],
       'secondary': ['Archivo', 'sans-serif']
+    },
+    fontSize: {
+      'tiny': '16px',
+      'base': '18px',
+      'xl': '20px',
+      'heading': '34px',
+      'heading-md': '48px',
+      'heading-xl': '54px',
+      'sub-heading': '26px',
+      'sub-heading-md': '32px',
+      'sub-heading-xl': '36px',
     }
   },
   variants: {

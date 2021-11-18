@@ -1,3 +1,6 @@
+$base-spacing: 8px;
+$base-radius: 4px;
+
 html,
 body {
   padding: 0;
@@ -10,4 +13,15 @@ body {
 
 .main-layout-container{
   max-width: 1280px;
+
+  @media screen and (max-width: 1280px) {
+    padding: 16px;
+  }
+}
+
+.divider {
+  // background-color: rgba(206, 209, 213, 0.3);
+  height: 2px;
+  border-radius: $base-radius;
+  margin: ($base-spacing * 3) 0;
 }

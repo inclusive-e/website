@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
   }, [])
 
   return (
-    <div className="dark:bg-d-background dark:text-d-primary-text font-primary" style={{minHeight: 1200}}>
+    <div className="dark:bg-d-background font-primary">
       <Component {...pageProps} />
     </div>
   )

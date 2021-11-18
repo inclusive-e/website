@@ -1,11 +1,7 @@
-import {Fragment} from 'react'
-
-export default function MainLayout ({ children }) {
+export default ({ children, ...props }) => {
   return (
-    <Fragment>
-      <div className="main-layout-container mx-auto">
-        {children}
-      </div>
-    </Fragment>
+    <div className="main-layout-container mx-auto py-1" {...props}>
+      {children}
+    </div>
   )
 }
