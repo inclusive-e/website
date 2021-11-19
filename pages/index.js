@@ -1,4 +1,5 @@
-import { Tiny, MainLayout, Divider, Text, Heading, SubHeading } from "./components";
+import { Tiny, MainLayout, Divider, Text, Heading, SubHeading, Button } from "./components";
+import { Form } from "./containers";
 
 export default function Home() {
   return (
@@ -41,7 +42,7 @@ export default function Home() {
           </Text>
         </div>
         <div className="lg:flex lg:flex-row">
-          <div className="lg:flex-1 border-4 my-5 p-3 rounded-sm border-d-button-text border-opacity-30 lg:mr-3">
+          <div className="lg:flex-1 border-3 my-5 p-3 rounded-sm border-d-button-text border-opacity-30 lg:mr-3">
             <div className="pb-3">
               <Tiny>
                 At Core
@@ -54,7 +55,7 @@ export default function Home() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
             </Text>
           </div>
-          <div className="lg:flex-1 border-4 my-5 p-3 rounded-sm border-d-button-text border-opacity-30">
+          <div className="lg:flex-1 border-3 my-5 p-3 rounded-sm border-d-button-text border-opacity-30">
             <div className="pb-3">
               <Tiny>
                 Beyond Core
@@ -82,11 +83,13 @@ export default function Home() {
           <Tiny>
             Lorem Ipsum si dolor.
           </Tiny>
-          <div>
-            <Text>Form</Text>
+          <div className="my-3">
+            <Form />
           </div>
           <div>
-            <button className="py-3 px-6 dark:bg-d-button-background dark:text-d-button-text font-bold rounded-sm">Get In touch!</button>
+            <Button>
+              Get In touch
+            </Button>
             <Tiny>Lorem ipsum si.</Tiny>
           </div>
         </div>
@@ -96,7 +99,7 @@ export default function Home() {
       </div>
       <div className="border py-8">
         <Text>
-        footer
+          footer
         </Text>
       </div>
     </MainLayout>

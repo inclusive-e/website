@@ -13,6 +13,12 @@ module.exports = {
         'd-background': '#0A1A2D',
         'd-button-background': '#3B4857',
         'd-button-text': '#CED1D5',
+      },
+      borderWidth: {
+        '3': '3px'
+      },
+      outline: {
+        accent: '3px solid #4DEEE2'
       }
     },
     fontFamily: {
@@ -32,7 +38,9 @@ module.exports = {
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      outline: ['hover']
+    },
   },
   plugins: [],
 }
