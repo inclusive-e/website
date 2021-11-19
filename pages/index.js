@@ -1,5 +1,5 @@
-import { Tiny, MainLayout, Divider, Text, Heading, SubHeading, Button } from "./components";
-import { Form } from "./containers";
+import { Tiny, MainLayout, Divider, Text, Heading, SubHeading, Button } from "../components";
+import { Form } from "../containers";
 
 export default function Home() {
   return (
