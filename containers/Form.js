@@ -1,4 +1,4 @@
-import { FormInput } from "../components"
+import { FormInput } from "components"
 
 const Form = () => {
   return (
