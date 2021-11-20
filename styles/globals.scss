@@ -15,8 +15,12 @@ body {
 .main-layout-container{
   max-width: $max-width;
 
-  @media screen and (max-width: $max-width) {
+  @media screen and (max-width: $base-spacing * 80) { // 640px (sm device)
     padding: ($base-spacing * 2);
+  }
+
+  @media screen and (min-width: ($base-spacing * 80) + 1) and (max-width: $max-width ) { // 640px (sm device)
+    padding: ($base-spacing * 4);
   }
 }
 

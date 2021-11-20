@@ -1,14 +1,14 @@
 import Link from 'next/link'
-import { Tiny, MainLayout, Divider, Text, Heading, SubHeading, Button } from "components";
+import { Tiny, MainLayout, Divider, Text, Heading, SubHeading } from "components";
 import { Form } from "containers";
 
 export default function Home() {
   return (
     <MainLayout>
       <div className="text-center border-dashed border mt-3 mb-6">
-        <Text>
-          Navbar
-        </Text>
+        <Tiny>
+          Time | Portfolio.pdf 
+        </Tiny>
       </div>
       <div className="lg:flex lg:flex-row">
         <div className="lg:flex-1">
@@ -100,7 +100,7 @@ export default function Home() {
       <div className="my-10">
         <Divider />
       </div>
-      <div className="md:w-8/12 mx-auto">
+      <div className="md:w-9/12 mx-auto">
         <div className="text-center">
           <div className="lg:w-8/12 mx-auto">
             <SubHeading>
@@ -108,30 +108,32 @@ export default function Home() {
                 Ideate, Develop, Optimize or Amplify your product.
               </div>
             </SubHeading>
-            <Tiny>
-              Let's work together.
-            </Tiny>
+            <div className="my-3">
+              <Tiny alt>
+                Let's Work Together.
+              </Tiny>
+            </div>
           </div>
-          <div className="my-3">
+          <div className="my-5">
             <Form />
-          </div>
-          <div>
-            <Button>
-              Get In touch
-            </Button>
-            <Tiny>
-              We've got your back. 🚀
-            </Tiny>
-          </div>
+          </div>          
         </div>
       </div>
-      <div className="my-6">
+      <div className="my-10">
         <Divider />
       </div>
-      <div className="border py-8">
-        <Text>
-          footer
-        </Text>
+      <div className="mb-8">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between">
+          <div className="order-1 lg:order-0 mt-5 lg:mt-0">
+            <Tiny>We start, then, with nothing ...</Tiny>
+            <div className="mt-1 dark:text-d-primary-text underline" style={{textDecorationColor:'#4DEEE2', textDecorationThickness: 3}}>
+              Powered By Inclusive
+            </div>
+          </div>
+          <div className="order-0 lg:order-1">
+            <Text>// icons</Text>
+          </div>
+        </div>
       </div>
     </MainLayout>
   )
