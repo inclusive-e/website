@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Tiny, MainLayout, Divider, Text, Heading, SubHeading, Button } from "components";
 import { Form } from "containers";
 
@@ -17,11 +18,11 @@ export default function Home() {
         </div>
         <div className="lg:flex-1">
           <Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            Together, We witness our generation and our times. The <b><span className="line-through" style={{textDecorationThickness:4}}>idea</span> <u>work being done here</u></b> is to bring together <b><i>diverse creators like you</i></b>, see what we can do to create & curate better, and thrive to become more <b className="dark:text-d-accent"><i>inclusive</i></b> in everything that we do.
           </Text>
           <div className="mt-5">
-            <Tiny>
-              We Are Hiring!
+            <Tiny alt link>
+              <u className="cursor-pointer">Siu, Lorem Ipsum si</u> 👋
             </Tiny>
           </div>
         </div>
@@ -30,15 +31,21 @@ export default function Home() {
         <Divider />
       </div>
       <div className="lg:w-9/12">
-        <Tiny>
-          Do good work.
+        <Tiny alt>
+          Do Good Work.
         </Tiny>
         <Heading>
-          Life advice looking through a window. Together.
+          Let's build a product market-fit, <span className="text-d-accent">Together.</span>
         </Heading>
         <div className="md:w-10/12">
           <Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            We <b className="dark:text-d-primary-text">collaborate and work closely</b> with fast-paced startups, process driven organizations, bold and ambitious folks, like you.
+          </Text>
+          <Text>
+            We are <b className="dark:text-d-primary-text">Product Engineers, Designers and Strategists.</b>
+          </Text>
+          <Text>
+            Our deliberate pursuit states that, <b>A right amount of technology when backed up by effective design systems</b>, is the minimum needed to create best-in-class products, that seamlessly blend <Link href="/" passHref><a className="underline"> form and function</a></Link>.
           </Text>
         </div>
         <div className="lg:flex lg:flex-row">
@@ -49,10 +56,11 @@ export default function Home() {
               </Tiny>
             </div>
             <Text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              From core React & Vue.js, to Performance first JAMStack architecture built frameworks NextJs, Gatbsy and NuxtJs, that leverage the power of Static site generators, Markups, Headless CMS systems and CDN.
             </Text>
+
             <Text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              <span className="dark:text-d-primary-text font-secondary font-bold">Building Accessible and Progressive Web Apps.</span>
             </Text>
           </div>
           <div className="lg:flex-1 border-3 my-5 p-3 rounded-sm border-d-button-text border-opacity-30">
@@ -62,13 +70,16 @@ export default function Home() {
               </Tiny>
             </div>
             <Text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              We take care of your end-to-end software migrations to cloud, Be it OS & Infrastructure level virtualization(s), automating your app(s) using Continuous Integration and Development, or generating cloud first strategies ensuring maximum scalability at minimum cost.
             </Text>
           </div>
         </div>
         <div className="md:w-10/12">
           <Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, <span className="text-d-accent underline">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</span>
+            We're your product's first users, a team of advisors helping you prioritize enablers and blockers, and a call-to-action integrated development team hell-bent on turning your ideas to favorable outcomes.
+          </Text>
+          <Text>
+            With close to half a decade of experience working with both domestic and global startups and organizations, <span className="dark:text-d-primary-text font-bold">Learning from them, Building with them,</span> <Link passHref href="/"><a className="text-d-accent underline font-bold">check out some of the work, experience, expertise, and how we can collaborate.</a></Link> 🤝
           </Text>
         </div>
       </div>
@@ -77,12 +88,16 @@ export default function Home() {
       </div>
       <div className="md:w-8/12 mx-auto">
         <div className="text-center">
-          <SubHeading>
-            Lorem ipsum dolor sit amet, <br/> consectetur.
-          </SubHeading>
-          <Tiny>
-            Lorem Ipsum si dolor.
-          </Tiny>
+          <div className="lg:w-8/12 mx-auto">
+            <SubHeading>
+              <div className="font-secondary font-medium">
+                Ideate, Develop, Optimize or Amplify your product.
+              </div>
+            </SubHeading>
+            <Tiny>
+              Let's work together.
+            </Tiny>
+          </div>
           <div className="my-3">
             <Form />
           </div>
@@ -90,7 +105,9 @@ export default function Home() {
             <Button>
               Get In touch
             </Button>
-            <Tiny>Lorem ipsum si.</Tiny>
+            <Tiny>
+              We've got your back. 🚀
+            </Tiny>
           </div>
         </div>
       </div>
