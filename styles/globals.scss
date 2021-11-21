@@ -1,3 +1,7 @@
+$base-spacing: 8px;
+$base-radius: 4px;
+$max-width: $base-spacing * 160;
+
 html,
 body {
   padding: 0;
@@ -8,39 +12,19 @@ body {
   box-sizing: border-box;
 }
 
-.btn {
-  @apply bg-btn-background text-btn-color px-4 py-2;
-}
+.main-layout-container{
+  max-width: $max-width;
 
-.layout-container{
-  max-width: 1280px;
-  font-size: 20px;
+  @media screen and (max-width: $base-spacing * 80) { // 640px (sm device)
+    padding: ($base-spacing * 2);
+  }
 
-  @media screen and (max-width: 768px) {
-    font-size: 18px;
+  @media screen and (min-width: ($base-spacing * 80) + 1) and (max-width: $max-width ) { // 640px (sm device)
+    padding: ($base-spacing * 4);
   }
 }
 
-.heading {
-  font-size: 54px;
-
-  @media screen and (max-width: 1024px) {
-    font-size: 48px;
-  }
-
-  @media screen and (max-width: 768px) {
-    font-size: 34px;
-  }
-}
-
-.sub-heading {
-  font-size: 36px;
-
-  @media screen and (max-width: 768px) {
-    font-size: 32px;
-  }
-}
-
-.sub-text {
-  font-size: 16px;
+.divider {
+  height: 2.5px;
+  border-radius: $base-radius;
 }
