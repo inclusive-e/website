@@ -14,7 +14,7 @@ const Form = () => {
         <FormInput placeholder="Phone Number" />
       </div>
       <div className="my-3">
-        <textarea placeholder="Brief us more about your idea!" className="dark:bg-d-button-background dark:text-d-button-text focus:outline-accent rounded-sm p-3 w-full lg:w-6/12" style={{minHeight: 120}} />
+        <textarea placeholder="Give us a brief about your idea." className="dark:bg-d-button-background dark:text-d-button-text focus:outline-accent rounded-sm p-3 w-full lg:w-6/12" style={{minHeight: 120}} />
       </div>
       <div className="my-5">
         <Button>
