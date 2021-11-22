@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Tiny, MainLayout, Divider, Text, Heading, SubHeading } from "components";
+import { Tiny, MainLayout, Divider, Text, Heading, SubHeading, Time } from "components";
 import { Form } from "containers";
 
 export default function Home() {
@@ -8,10 +8,16 @@ export default function Home() {
       <div className="text-center mt-3 mb-8">
         <div className="flex flex-row justify-between items-center">
           <div>
-            <Tiny>Date/Time</Tiny>
+            <Tiny>
+              <div className="dark:text-d-primary-text">
+                🇮🇳 <Time />
+              </div>
+            </Tiny>
           </div>
           <div>
-            <Tiny alt><u className="cursor-pointer">Portfolio.pdf</u></Tiny>
+            <Tiny alt>
+              <u className="cursor-pointer">Our Portfolio</u>
+            </Tiny>
           </div>
         </div>
       </div>
@@ -27,7 +33,7 @@ export default function Home() {
           </Text>
           <div className="mt-5">
             <Tiny alt>
-              Relatable? <u className="cursor-pointer">Come work with us.</u> 👋
+              <u className="cursor-pointer">Come work with us.</u> 👋
             </Tiny>
           </div>
         </div>
@@ -86,13 +92,13 @@ export default function Home() {
             </Tiny>
             <div className="my-5">
               <Text>
-                Be it OS & Infrastructure level virtualization(s), automating your app(s) using Continuous Integration and Development, or generating cloud first strategies <u>ensuring maximum scalability at minimum cost</u>.
+              Be it server-side systems, OS & Infrastructure level virtualization(s), automating your app(s) using Continuous Integration and Development, or generating cloud first strategies <u>ensuring maximum scalability at minimum cost</u>.
               </Text>
             </div>
             <div className="my-5">
               <Text>
                 <span className="dark:text-d-primary-text font-secondary font-bold">
-                  We take care of your end-to-end DevOps and Cloud solutions.
+                  We take care of your end-to-end Server, DevOps and Cloud solutions.
                 </span>
               </Text>
             </div>
