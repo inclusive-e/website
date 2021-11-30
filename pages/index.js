@@ -1,19 +1,30 @@
 import Link from 'next/link'
-import { Tiny, MainLayout, Divider, Text, Heading, SubHeading } from "components";
+import { Tiny, MainLayout, Divider, Text, Heading, SubHeading, Time } from "components";
 import { Form } from "containers";
 
 export default function Home() {
   return (
     <MainLayout>
-      <div className="text-center border-dashed border mt-3 mb-6">
-        <Tiny>
-          Time | Portfolio.pdf 
-        </Tiny>
+      <div className="text-center mt-3 mb-8">
+        <div className="flex flex-row justify-between items-center">
+          <div>
+            <Tiny>
+              <div className="dark:text-d-primary-text">
+                🇮🇳 <Time />
+              </div>
+            </Tiny>
+          </div>
+          <div>
+            <Tiny alt>
+              <u className="cursor-pointer">Our Portfolio</u>
+            </Tiny>
+          </div>
+        </div>
       </div>
       <div className="lg:flex lg:flex-row">
-        <div className="lg:flex-1">
+        <div className="lg:flex-1 my-5 lg:my-0">
           <Text>
-            PMF image
+            // PMF image
           </Text>
         </div>
         <div className="lg:flex-1">
@@ -21,8 +32,8 @@ export default function Home() {
             Together, We witness our generation and our times. The <b><span className="line-through" style={{textDecorationThickness:4}}>idea</span> <u>work being done here</u></b> is to bring together <b><i>diverse creators like you</i></b>, see what we can do to create & curate better, and thrive to become more <b className="dark:text-d-accent font-secondary"><i>inclusive</i></b> in everything that we do.
           </Text>
           <div className="mt-5">
-            <Tiny alt link>
-              <u className="cursor-pointer">Siu, Lorem Ipsum si</u> 👋
+            <Tiny alt>
+              <u className="cursor-pointer">Come work with us.</u> 👋
             </Tiny>
           </div>
         </div>
@@ -52,7 +63,7 @@ export default function Home() {
           </Text>
           <div className="my-5">
             <Text>
-              Our deliberate pursuit states that, <b>A right amount of technology when backed up by effective design systems</b>, is the minimum needed to create best-in-class products, that seamlessly blend <Link href="/" passHref><a className="underline"> form and function</a></Link>.
+              Our deliberate pursuit states that, <b>A right amount of technology when backed up by effective design systems</b>, is the minimum needed to create best-in-class products, that seamlessly blend <Link href="https://en.wikipedia.org/wiki/Form_follows_function" passHref><a target="_blank" className="underline"> form and function</a></Link>.
             </Text>
           </div>
         </div>
@@ -63,11 +74,16 @@ export default function Home() {
             </Tiny>
             <div className="my-5">
               <Text>
-                From core React & Vue.js, to Performance first JAMStack architecture built frameworks NextJs, Gatbsy and NuxtJs, that leverage the power of Static site generators, Markups, Headless CMS systems and CDN.
+                From core React & Vue.js, to Performance first JAMStack architecture built frameworks NextJs, Gatbsy and NuxtJs, that leverage the power of Static site generators, CDN, Headless CMS systems &  Markups.
+              </Text>
+            </div>
+            <div className="my-5">
+              <Text>
+                <span className="dark:text-d-primary-text font-secondary font-bold">Building Accessible and Progressive Web Apps.</span>
               </Text>
             </div>
             <Text>
-              <span className="dark:text-d-primary-text font-secondary font-bold">Building Accessible and Progressive Web Apps.</span>
+              // icons
             </Text>
           </div>
           <div className="lg:flex-1 border-3 my-5 p-5 rounded-sm border-d-button-text border-opacity-30">
@@ -76,21 +92,26 @@ export default function Home() {
             </Tiny>
             <div className="my-5">
               <Text>
-                Be it OS & Infrastructure level virtualization(s), automating your app(s) using Continuous Integration and Development, or generating cloud first strategies ensuring maximum scalability at minimum cost.
+              Be it server-side systems, OS & Infrastructure level virtualization(s), automating your app(s) using Continuous Integration and Development, or generating cloud first strategies <u>ensuring maximum scalability at minimum cost</u>.
+              </Text>
+            </div>
+            <div className="my-5">
+              <Text>
+                <span className="dark:text-d-primary-text font-secondary font-bold">
+                  We take care of your end-to-end Server, DevOps and Cloud solutions.
+                </span>
               </Text>
             </div>
             <Text>
-              <span className="dark:text-d-primary-text font-secondary font-bold">
-                We take care of your end-to-end software migrations to cloud.
-              </span>
+              // icons
             </Text>
           </div>
         </div>
         <div className="md:w-10/12">
           <div className="my-5">
-            <Text>
-              We're your product's first users, a team of advisors helping you prioritize enablers and blockers, and a call-to-action integrated development team hell-bent on turning your ideas to favorable outcomes.
-            </Text>
+            <SubHeading>
+              <span className="font-secondary font-medium dark:text-d-primary-text">We're your product's first users, a team of advisors helping you prioritize enablers and blockers, and a call-to-action integrated development team hell-bent on turning your ideas to favorable outcomes.</span>
+            </SubHeading>
           </div>
           <Text>
             With close to half a decade of experience working with both domestic and global startups and organizations, <span className="dark:text-d-primary-text font-bold">Learning from them, Building with them,</span> <Link passHref href="/"><a className="text-d-accent underline font-bold">check out some of the work, experience, expertise, and how we can collaborate.</a></Link> 🤝
