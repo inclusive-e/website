@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Tiny, MainLayout, Divider, Text, Heading, SubHeading, Time } from "components";
 import { Form } from "containers";
-import { ApolloGraphQL, AWS, Docker, Firebase, Gatsby, GoogleCloud, GraphQL, MongoDb, NextJs, NodeJs, NuxtJs, React, Vue } from 'styles/icons/stack';
+import { ApolloGraphQL, AWS, Docker, Firebase, Gatsby, GoogleCloud, GraphQL, JAMStack, MongoDb, NextJs, NodeJs, NuxtJs, React, Vue } from 'styles/icons/stack';
 import { Github, Gmail, LinkedIn, Twitter } from 'styles/icons/social';
 
 export default function Home() {
@@ -84,13 +84,14 @@ export default function Home() {
                 <span className="dark:text-d-primary-text font-secondary font-bold">Building Accessible and Progressive Web Apps.</span>
               </Text>
             </div>
-            <div className="flex flex-row justify-between space-x-3">
+            <div className="flex flex-row space-x-3 md:space-x-4">
               <React />
               <Vue />
               <Gatsby />
               <NextJs />
               <NuxtJs />
               <GraphQL />
+              <JAMStack />
             </div>
           </div>
           <div className="lg:flex-1 border-3 my-5 p-5 rounded-sm border-d-button-text border-opacity-30">
@@ -109,7 +110,7 @@ export default function Home() {
                 </span>
               </Text>
             </div>
-            <div className="flex flex-row justify-between space-x-3">
+            <div className="flex flex-row space-x-3 md:space-x-4">
               <AWS />
               <GoogleCloud />
               <Docker />
