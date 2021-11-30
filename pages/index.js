@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import { Tiny, MainLayout, Divider, Text, Heading, SubHeading, Time } from "components";
 import { Form } from "containers";
+import { ApolloGraphQL, AWS, Docker, Firebase, Gatsby, GoogleCloud, GraphQL, MongoDb, NextJs, NodeJs, NuxtJs, React, Vue } from 'styles/icons/stack';
+import { Github, Gmail, LinkedIn, Twitter } from 'styles/icons/social';
 
 export default function Home() {
   return (
@@ -49,7 +51,7 @@ export default function Home() {
         </div>
         <div className="my-5">
           <Heading>
-            Let's build a product market-fit, <span className="text-d-accent">Together.</span>
+            Let's build a Product-Market Fit, <span className="text-d-accent">Together.</span>
           </Heading>
         </div>
         <div className="md:w-10/12">
@@ -77,14 +79,19 @@ export default function Home() {
                 From core React & Vue.js, to Performance first JAMStack architecture built frameworks NextJs, Gatbsy and NuxtJs, that leverage the power of Static site generators, CDN, Headless CMS systems &  Markups.
               </Text>
             </div>
-            <div className="my-5">
+            <div className="mb-8">
               <Text>
                 <span className="dark:text-d-primary-text font-secondary font-bold">Building Accessible and Progressive Web Apps.</span>
               </Text>
             </div>
-            <Text>
-              // icons
-            </Text>
+            <div className="flex flex-row justify-between space-x-3">
+              <React />
+              <Vue />
+              <Gatsby />
+              <NextJs />
+              <NuxtJs />
+              <GraphQL />
+            </div>
           </div>
           <div className="lg:flex-1 border-3 my-5 p-5 rounded-sm border-d-button-text border-opacity-30">
             <Tiny alt>
@@ -95,16 +102,22 @@ export default function Home() {
               Be it server-side systems, OS & Infrastructure level virtualization(s), automating your app(s) using Continuous Integration and Development, or generating cloud first strategies <u>ensuring maximum scalability at minimum cost</u>.
               </Text>
             </div>
-            <div className="my-5">
+            <div className="mb-8">
               <Text>
                 <span className="dark:text-d-primary-text font-secondary font-bold">
                   We take care of your end-to-end Server, DevOps and Cloud solutions.
                 </span>
               </Text>
             </div>
-            <Text>
-              // icons
-            </Text>
+            <div className="flex flex-row justify-between space-x-3">
+              <AWS />
+              <GoogleCloud />
+              <Docker />
+              <Firebase />
+              <MongoDb />
+              <NodeJs />
+              <ApolloGraphQL />
+            </div>
           </div>
         </div>
         <div className="md:w-10/12">
@@ -145,14 +158,18 @@ export default function Home() {
       </div>
       <div className="mb-8">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between">
-          <div className="order-1 lg:order-0 mt-5 lg:mt-0">
+          <div className="order-1 lg:order-0 mt-8 lg:mt-0">
             <Tiny>We start, then, with nothing ...</Tiny>
             <div className="mt-1 dark:text-d-primary-text underline" style={{textDecorationColor:'#4DEEE2', textDecorationThickness: 3}}>
               Powered By Inclusive
             </div>
           </div>
           <div className="order-0 lg:order-1">
-            <Text>// icons</Text>
+            <div className="flex flex-row space-x-4">
+              <Link href="/" passHref><a target="_blank"><LinkedIn /></a></Link>
+              <Link href="/" passHref><a target="_blank"><Twitter /></a></Link>
+              <Link href="/" passHref><a target="_blank"><Github /></a></Link>
+            </div>
           </div>
         </div>
       </div>
