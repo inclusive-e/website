@@ -3,11 +3,12 @@ import { Tiny, MainLayout, Divider, Text, Heading, SubHeading, Time } from "comp
 import { Form } from "containers";
 import { ApolloGraphQL, AWS, Docker, Firebase, Gatsby, GoogleCloud, GraphQL, JAMStack, MongoDb, NextJs, NodeJs, NuxtJs, React, Vue } from 'styles/icons/stack';
 import { Github, Gmail, LinkedIn, Twitter } from 'styles/icons/social';
+import { Flow } from 'styles/icons';
 
 export default function Home() {
   return (
     <MainLayout>
-      <div className="text-center mt-3 mb-8">
+      <div className="text-center mt-3 mb-10">
         <div className="flex flex-row justify-between items-center">
           <div>
             <Tiny>
@@ -23,17 +24,17 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="lg:flex lg:flex-row">
-        <div className="lg:flex-1 my-5 lg:my-0">
-          <Text>
-            // PMF image
-          </Text>
+      <div className="flex flex-col lg:flex-row">
+        <div className="lg:flex-1 my-5 lg:my-0 order-1 lg:order-0">
+          <div className="banner-img">
+            <Flow />
+          </div>
         </div>
-        <div className="lg:flex-1">
+        <div className="lg:flex-1 order-0 lg:order-1">
           <Text>
             Together, We witness our generation and our times. The <b><span className="line-through" style={{textDecorationThickness:4}}>idea</span> <u>work being done here</u></b> is to bring together <b><i>diverse creators like you</i></b>, see what we can do to create & curate better, and thrive to become more <b className="dark:text-d-accent font-secondary"><i>inclusive</i></b> in everything that we do.
           </Text>
-          <div className="mt-5">
+          <div className="my-5">
             <Tiny alt>
               <u className="cursor-pointer">Come work with us.</u> 👋
             </Tiny>
