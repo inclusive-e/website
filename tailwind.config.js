@@ -1,9 +1,11 @@
 module.exports = {
-  // purge: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx}"],
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-  ],
+  purge: {
+    content: [
+      "./pages/**/*.{js,ts,jsx,tsx}",
+      "./components/**/*.{js,ts,jsx,tsx}",
+      "./conatiners/**/*.{js,ts,jsx,tsx}",
+    ],
+  },
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
