@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "lint": "next lint"
   },
   "dependencies": {
@@ -22,6 +23,7 @@
     "eslint": "^7.32.0",
     "eslint-config-next": "^11.0.1",
     "postcss": "^8.3.6",
+    "prettier": "^2.5.1",
     "tailwindcss": "^2.2.7"
   }
 }

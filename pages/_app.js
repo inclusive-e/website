@@ -1,12 +1,16 @@
-import { useEffect } from 'react'
-import '../styles/tailwind.scss'
-import '../styles/globals.scss'
+import { useEffect } from "react"
+import "../styles/tailwind.scss"
+import "../styles/globals.scss"
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    localStorage.setItem('theme', 'dark')
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark')
+    localStorage.setItem("theme", "dark")
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark")
     }
   }, [])
 

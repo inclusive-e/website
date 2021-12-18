@@ -38,3 +38,11 @@ body {
 .circle-three{
   animation-delay: 0.3s;
 }
+
+.banner-img{
+  svg {
+    @media screen and (min-width: ($base-spacing * 80)) {
+      width: 70% !important;
+    }
+  }
+}
