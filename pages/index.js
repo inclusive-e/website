@@ -1,9 +1,32 @@
-import Link from 'next/link'
-import { Tiny, MainLayout, Divider, Text, Heading, SubHeading, Time } from "components";
-import { Form } from "containers";
-import { ApolloGraphQL, AWS, Docker, Firebase, Gatsby, GoogleCloud, GraphQL, JAMStack, MongoDb, NextJs, NodeJs, NuxtJs, React, Vue } from 'styles/icons/stack';
-import { Github, Gmail, LinkedIn, Twitter } from 'styles/icons/social';
-import { Flow } from 'styles/icons';
+import Link from "next/link"
+import {
+  Tiny,
+  MainLayout,
+  Divider,
+  Text,
+  Heading,
+  SubHeading,
+  Time,
+} from "components"
+import { Form } from "containers"
+import {
+  ApolloGraphQL,
+  AWS,
+  Docker,
+  Firebase,
+  Gatsby,
+  GoogleCloud,
+  GraphQL,
+  JAMStack,
+  MongoDb,
+  NextJs,
+  NodeJs,
+  NuxtJs,
+  React,
+  Vue,
+} from "styles/icons/stack"
+import { Github, Gmail, LinkedIn, Twitter } from "styles/icons/social"
+import { Flow } from "styles/icons"
 
 export default function Home() {
   return (
@@ -32,7 +55,26 @@ export default function Home() {
         </div>
         <div className="lg:flex-1 order-0 lg:order-1">
           <Text>
-            Together, We witness our generation and our times. The <b><span className="line-through" style={{textDecorationThickness:4}}>idea</span> <u>work being done here</u></b> is to bring together <b><i>diverse creators like you</i></b>, see what we can do to create & curate better, and thrive to become more <b className="dark:text-d-accent font-secondary"><i>inclusive</i></b> in everything that we do.
+            Together, We witness our generation and our times. The{" "}
+            <b>
+              <span
+                className="line-through"
+                style={{ textDecorationThickness: 4 }}
+              >
+                idea
+              </span>{" "}
+              <u>work being done here</u>
+            </b>{" "}
+            is to bring together{" "}
+            <b>
+              <i>diverse creators like you</i>
+            </b>
+            , see what we can do to create & curate better, and thrive to become
+            more{" "}
+            <b className="dark:text-d-accent font-secondary">
+              <i>inclusive</i>
+            </b>{" "}
+            in everything that we do.
           </Text>
           <div className="my-5">
             <Tiny alt>
@@ -46,43 +88,69 @@ export default function Home() {
       </div>
       <div className="lg:w-9/12">
         <div className="my-5">
-          <Tiny alt>
-            Do Good Work.
-          </Tiny>
+          <Tiny alt>Do Good Work.</Tiny>
         </div>
         <div className="my-5">
           <Heading>
-            Let's build a Product-Market Fit, <span className="text-d-accent">Together.</span>
+            Let's build a Product-Market Fit,{" "}
+            <span className="text-d-accent">Together.</span>
           </Heading>
         </div>
         <div className="md:w-10/12">
           <div className="my-5">
             <Text>
-              We <b className="dark:text-d-primary-text">collaborate and work closely</b> with fast-paced startups, process driven organizations, bold and ambitious folks, like you.
+              We{" "}
+              <b className="dark:text-d-primary-text">
+                collaborate and work closely
+              </b>{" "}
+              with fast-paced startups, process driven organizations, bold and
+              ambitious folks, like you.
             </Text>
           </div>
           <Text>
-            We are <b className="dark:text-d-primary-text font-secondary">Product Engineers, Designers and Strategists.</b>
+            We are{" "}
+            <b className="dark:text-d-primary-text font-secondary">
+              Product Engineers, Designers and Strategists.
+            </b>
           </Text>
           <div className="my-5">
             <Text>
-              Our deliberate pursuit states that, <b>A right amount of technology when backed up by effective design systems</b>, is the minimum needed to create best-in-class products, that seamlessly blend <Link href="https://en.wikipedia.org/wiki/Form_follows_function" passHref><a target="_blank" className="underline"> form and function</a></Link>.
+              Our deliberate pursuit states that,{" "}
+              <b>
+                A right amount of technology when backed up by effective design
+                systems
+              </b>
+              , is the minimum needed to create best-in-class products, that
+              seamlessly blend{" "}
+              <Link
+                href="https://en.wikipedia.org/wiki/Form_follows_function"
+                passHref
+              >
+                <a target="_blank" className="underline">
+                  {" "}
+                  form and function
+                </a>
+              </Link>
+              .
             </Text>
           </div>
         </div>
         <div className="lg:flex lg:flex-row">
           <div className="lg:flex-1 border-3 my-5 p-5 rounded-sm border-d-button-text border-opacity-30 lg:mr-5">
-            <Tiny alt>
-              At Core
-            </Tiny>
+            <Tiny alt>At Core</Tiny>
             <div className="my-5">
               <Text>
-                From core React & Vue.js, to Performance first JAMStack architecture built frameworks NextJs, Gatbsy and NuxtJs, that leverage the power of Static site generators, CDN, Headless CMS systems &  Markups.
+                From core React & Vue.js, to Performance first JAMStack
+                architecture built frameworks NextJs, Gatbsy and NuxtJs, that
+                leverage the power of Static site generators, CDN, Headless CMS
+                systems & Markups.
               </Text>
             </div>
             <div className="mb-8">
               <Text>
-                <span className="dark:text-d-primary-text font-secondary font-bold">Building Accessible and Progressive Web Apps.</span>
+                <span className="dark:text-d-primary-text font-secondary font-bold">
+                  Building Accessible and Progressive Web Apps.
+                </span>
               </Text>
             </div>
             <div className="flex flex-row space-x-3 md:space-x-4">
@@ -96,18 +164,20 @@ export default function Home() {
             </div>
           </div>
           <div className="lg:flex-1 border-3 my-5 p-5 rounded-sm border-d-button-text border-opacity-30">
-            <Tiny alt>
-              Beyond Core
-            </Tiny>
+            <Tiny alt>Beyond Core</Tiny>
             <div className="my-5">
               <Text>
-              Be it server-side systems, OS & Infrastructure level virtualization(s), automating your app(s) using Continuous Integration and Development, or generating cloud first strategies <u>ensuring maximum scalability at minimum cost</u>.
+                Be it server-side systems, OS & Infrastructure level
+                virtualization(s), automating your app(s) using Continuous
+                Integration and Development, or generating cloud first
+                strategies <u>ensuring maximum scalability at minimum cost</u>.
               </Text>
             </div>
             <div className="mb-8">
               <Text>
                 <span className="dark:text-d-primary-text font-secondary font-bold">
-                  We take care of your end-to-end Server, DevOps and Cloud solutions.
+                  We take care of your end-to-end Server, DevOps and Cloud
+                  solutions.
                 </span>
               </Text>
             </div>
@@ -125,11 +195,27 @@ export default function Home() {
         <div className="md:w-10/12">
           <div className="my-5">
             <SubHeading>
-              <span className="font-secondary font-medium dark:text-d-primary-text">We're your product's first users, a team of advisors helping you prioritize enablers and blockers, and a call-to-action integrated development team hell-bent on turning your ideas to favorable outcomes.</span>
+              <span className="font-secondary font-medium dark:text-d-primary-text">
+                We're your product's first users, a team of advisors helping you
+                prioritize enablers and blockers, and a call-to-action
+                integrated development team hell-bent on turning your ideas to
+                favorable outcomes.
+              </span>
             </SubHeading>
           </div>
           <Text>
-            With close to half a decade of experience working with both domestic and global startups and organizations, <span className="dark:text-d-primary-text font-bold">Learning from them, Building with them,</span> <Link passHref href="/"><a className="text-d-accent underline font-bold">check out some of the work, experience, expertise, and how we can collaborate.</a></Link> 🤝
+            With close to half a decade of experience working with both domestic
+            and global startups and organizations,{" "}
+            <span className="dark:text-d-primary-text font-bold">
+              Learning from them, Building with them,
+            </span>{" "}
+            <Link passHref href="/">
+              <a className="text-d-accent underline font-bold">
+                check out some of the work, experience, expertise, and how we
+                can collaborate.
+              </a>
+            </Link>{" "}
+            🤝
           </Text>
         </div>
       </div>
@@ -145,14 +231,12 @@ export default function Home() {
               </div>
             </SubHeading>
             <div className="my-3">
-              <Tiny alt>
-                Let's Work Together.
-              </Tiny>
+              <Tiny alt>Let's Work Together.</Tiny>
             </div>
           </div>
           <div className="my-5">
             <Form />
-          </div>          
+          </div>
         </div>
       </div>
       <div className="my-10">
@@ -162,15 +246,33 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row lg:items-center justify-between">
           <div className="order-1 lg:order-0 mt-8 lg:mt-0">
             <Tiny>We start, then, with nothing ...</Tiny>
-            <div className="mt-1 dark:text-d-primary-text underline" style={{textDecorationColor:'#4DEEE2', textDecorationThickness: 3}}>
+            <div
+              className="mt-1 dark:text-d-primary-text underline"
+              style={{
+                textDecorationColor: "#4DEEE2",
+                textDecorationThickness: 3,
+              }}
+            >
               Powered By Inclusive
             </div>
           </div>
           <div className="order-0 lg:order-1">
             <div className="flex flex-row space-x-4">
-              <Link href="/" passHref><a target="_blank"><LinkedIn /></a></Link>
-              <Link href="/" passHref><a target="_blank"><Twitter /></a></Link>
-              <Link href="/" passHref><a target="_blank"><Github /></a></Link>
+              <Link href="/" passHref>
+                <a target="_blank">
+                  <LinkedIn />
+                </a>
+              </Link>
+              <Link href="/" passHref>
+                <a target="_blank">
+                  <Twitter />
+                </a>
+              </Link>
+              <Link href="/" passHref>
+                <a target="_blank">
+                  <Github />
+                </a>
+              </Link>
             </div>
           </div>
         </div>

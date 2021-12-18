@@ -1,4 +1,10 @@
-const FormInput = ({type = "text", value, onChange, placeholder, ...props}) => {
+const FormInput = ({
+  type = "text",
+  value,
+  onChange,
+  placeholder,
+  ...props
+}) => {
   return (
     <input
       type={type}
