@@ -92,8 +92,8 @@ const Form = () => {
               <Loading />
             </div>
           ) : (
-            <div className="flex">
-              <div className="mr-10">Get In Touch</div>
+            <div className="flex space-x-4">
+              <div>Get In Touch</div>
               <div>
                 <Arrow />
               </div>
