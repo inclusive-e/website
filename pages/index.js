@@ -25,6 +25,7 @@ import {
   React,
   Vue,
 } from "styles/icons/stack"
+import { Roadmap, Amplify, Build, Tailored } from "styles/icons/stages"
 import { Github, Gmail, LinkedIn, Twitter } from "styles/icons/social"
 import { Flow } from "styles/icons"
 
@@ -131,6 +132,32 @@ export default function Home() {
               Product Engineers, Designers and Strategists.
             </b>
           </Text>
+          <div className="mt-5 mb-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+            <div className="flex p-3 flex-col items-center rounded-sm dark:bg-d-button-background dark:bg-opacity-30">
+              <Roadmap />
+              <div className="text-center">
+                <Tiny>Project Roadmaps</Tiny>
+              </div>
+            </div>
+            <div className="flex p-3 flex-col justify-center items-center rounded-sm dark:bg-d-button-background dark:bg-opacity-30">
+              <Build />
+              <div className="text-center">
+                <Tiny>Build Digital Products</Tiny>
+              </div>
+            </div>
+            <div className="flex p-3 flex-col justify-center items-center rounded-sm dark:bg-d-button-background dark:bg-opacity-30">
+              <Amplify />
+              <div className="text-center">
+                <Tiny>Amplify Performance</Tiny>
+              </div>
+            </div>
+            <div className="flex p-3 flex-col justify-center items-center rounded-sm dark:bg-d-button-background dark:bg-opacity-30">
+              <Tailored />
+              <div className="text-center">
+                <Tiny>Tailored-made Solutions</Tiny>
+              </div>
+            </div>
+          </div>
           <div className="my-5">
             <Text>
               Our deliberate pursuit states that,{" "}
