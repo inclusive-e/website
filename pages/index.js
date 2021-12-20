@@ -132,29 +132,37 @@ export default function Home() {
               Product Engineers, Designers and Strategists.
             </b>
           </Text>
-          <div className="mt-5 mb-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
-            <div className="flex p-3 flex-col items-center rounded-sm dark:bg-d-button-background dark:bg-opacity-30">
-              <Roadmap />
+          <div className="my-5 lg:my-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 lg:gap-3">
+            <div className="flex py-3 flex-col items-center rounded-sm dark:bg-d-button-background dark:bg-opacity-20">
+              <div className="flex flex-1 items-center">
+                <Roadmap />
+              </div>
               <div className="text-center">
-                <Tiny>Project Roadmaps</Tiny>
+                <Tiny>Clarity Roadmaps</Tiny>
               </div>
             </div>
-            <div className="flex p-3 flex-col justify-center items-center rounded-sm dark:bg-d-button-background dark:bg-opacity-30">
-              <Build />
+            <div className="flex py-3 flex-col items-center rounded-sm dark:bg-d-button-background dark:bg-opacity-20">
+              <div className="flex flex-1 items-center">
+                <Build />
+              </div>
               <div className="text-center">
                 <Tiny>Build Digital Products</Tiny>
               </div>
             </div>
-            <div className="flex p-3 flex-col justify-center items-center rounded-sm dark:bg-d-button-background dark:bg-opacity-30">
-              <Amplify />
+            <div className="flex py-3 flex-col items-center rounded-sm dark:bg-d-button-background dark:bg-opacity-20">
+              <div className="flex flex-1 items-center">
+                <Amplify />
+              </div>
               <div className="text-center">
                 <Tiny>Amplify Performance</Tiny>
               </div>
             </div>
-            <div className="flex p-3 flex-col justify-center items-center rounded-sm dark:bg-d-button-background dark:bg-opacity-30">
-              <Tailored />
+            <div className="flex py-3 flex-col items-center rounded-sm dark:bg-d-button-background dark:bg-opacity-20">
+              <div className="flex flex-1 items-center">
+                <Tailored />
+              </div>
               <div className="text-center">
-                <Tiny>Tailored-made Solutions</Tiny>
+                <Tiny>Tailor-made Solutions</Tiny>
               </div>
             </div>
           </div>
@@ -215,7 +223,11 @@ export default function Home() {
                 Be it server-side systems, OS & Infrastructure level
                 virtualization(s), automating your app(s) using Continuous
                 Integration and Development, or generating cloud first
-                strategies <u>ensuring maximum scalability at minimum cost</u>.
+                strategies{" "}
+                <span className="dark:text-d-primary-text font-bold">
+                  ensuring maximum scalability at minimum cost
+                </span>
+                .
               </Text>
             </div>
             <div className="mb-8">
