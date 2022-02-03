@@ -2,10 +2,16 @@ name: Inclusive Website Staging Deployment
 on:
   push:
     branches:
-      - "cicd/staging"
+      - cicd/staging
 jobs:
   information:
     runs-on: ubuntu-latest
     steps:
       - run: echo "::Runner Information::"
       - run: cat /etc/*release
+  fetch-website-staging-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: cicd/staging
