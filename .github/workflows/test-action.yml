@@ -4,10 +4,15 @@ on:
     branches:
       - cicd/staging
 jobs:
-  fetch-website-staging-branch:
+  build-staging-website:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           ref: cicd/staging
-      - run: ls -hal
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 'lts/*'
+      - run: npm install
+      - run: npm run build
+      - run: npm run export
