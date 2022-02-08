@@ -2,7 +2,7 @@ name: Inclusive Website Staging Deployment
 on:
   push:
     branches:
-      - cicd/staging
+      - staging
 jobs:
   deploy-staging:
     runs-on: ubuntu-latest
