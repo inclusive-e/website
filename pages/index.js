@@ -5,8 +5,7 @@ export default function Home() {
     <MainLayout>
       <div className="h-screen">
         <div className="flex flex-col justify-center items-center h-full">
-          <span className="text-6xl my-1 font-semibold">Inclusive</span>
-          <span className="text-lg font-thin my-1">Coming soon ...</span>
+          <span className="text-6xl my-1 font-semibold">This is staging!</span>
         </div>
       </div>
     </MainLayout>
