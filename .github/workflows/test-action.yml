@@ -19,6 +19,7 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: npm run export
+      - run: ls -hal
       - run: curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
       - run: unzip awscliv2.zip
       - run: sudo ./aws/install
