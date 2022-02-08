@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     environment: staging
     steps:
-      - run: apt update -y && apt upgrade -y
-      - run: apt install -y curl unzip
+      - run: sudo apt update -y && sudo apt upgrade -y
+      - run: sudo apt install -y curl unzip
       - uses: actions/checkout@v2
         with:
           ref: cicd/staging
