@@ -4,9 +4,12 @@ on:
     branches:
       - cicd/staging
 jobs:
-  build-staging-website:
+  deploy-staging:
     runs-on: ubuntu-latest
+    environment: staging
     steps:
+      - run: apt update -y && apt upgrade -y
+      - run: apt install -y curl unzip
       - uses: actions/checkout@v2
         with:
           ref: cicd/staging
@@ -16,3 +19,13 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: npm run export
+      - run: curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+      - run: unzip awscliv2.zip
+      - run: sudo ./aws/install
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.HARSHIT_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.HARSHIT_AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-south-1
+      - run: aws s3 sync build s3://inclusive-website-staging --delete
