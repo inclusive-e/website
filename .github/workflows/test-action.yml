@@ -22,11 +22,11 @@ jobs:
       - run: ls -hal
       - run: curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
       - run: unzip awscliv2.zip
-      - run: sudo ./aws/install
+      - run: sudo ./aws/install --update
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.HARSHIT_AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.HARSHIT_AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-south-1
-      - run: aws s3 sync build s3://inclusive-website-staging --delete
+      - run: aws s3 sync ./out s3://inclusive-website-staging --delete
