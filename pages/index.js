@@ -25,6 +25,7 @@ import {
   React,
   Vue,
 } from "styles/icons/stack"
+import { Roadmap, Amplify, Build, Tailored } from "styles/icons/stages"
 import { Github, Gmail, LinkedIn, Twitter } from "styles/icons/social"
 import { Flow } from "styles/icons"
 
@@ -48,25 +49,42 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row">
-        <div className="lg:flex-1 my-5 lg:my-0 order-1 lg:order-0">
+        <div className="lg:flex-1 order-1 lg:order-0">
           <div className="banner-img">
             <Flow />
+          </div>
+          <div className="mt-3">
+            <Tiny>
+              Don’t just design the product and build the whole thing.
+            </Tiny>
+            <Text>
+              <span className="font-bold dark:text-d-primary-text">
+                Ship often. Get early feedback. Iterate{" "}
+                <span
+                  className="line-through dark:text-d-secondary-text"
+                  style={{ textDecorationThickness: 4 }}
+                >
+                  quickly
+                </span>{" "}
+                wisely.
+              </span>
+            </Text>
           </div>
         </div>
         <div className="lg:flex-1 order-0 lg:order-1">
           <Text>
             Together, We witness our generation and our times. The{" "}
-            <b>
+            <b className="dark:text-d-primary-text">
               <span
                 className="line-through"
                 style={{ textDecorationThickness: 4 }}
               >
                 idea
               </span>{" "}
-              <u>work being done here</u>
+              work being done here
             </b>{" "}
             is to bring together{" "}
-            <b>
+            <b className="dark:text-d-primary-text">
               <i>diverse creators like you</i>
             </b>
             , see what we can do to create & curate better, and thrive to become
@@ -78,7 +96,10 @@ export default function Home() {
           </Text>
           <div className="my-5">
             <Tiny alt>
-              <u className="cursor-pointer">Come work with us.</u> 👋
+              <Link href="#contact">
+                <u className="cursor-pointer">Come work with us.</u>
+              </Link>{" "}
+              👋
             </Tiny>
           </div>
         </div>
@@ -87,9 +108,7 @@ export default function Home() {
         <Divider />
       </div>
       <div className="lg:w-9/12">
-        <div className="my-5">
-          <Tiny alt>Do Good Work.</Tiny>
-        </div>
+        <Tiny alt>Do Good Work.</Tiny>
         <div className="my-5">
           <Heading>
             Let's build a Product-Market Fit,{" "}
@@ -113,6 +132,40 @@ export default function Home() {
               Product Engineers, Designers and Strategists.
             </b>
           </Text>
+          <div className="my-5 lg:my-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 lg:gap-3">
+            <div className="flex py-3 flex-col items-center rounded-sm dark:bg-d-button-background dark:bg-opacity-20">
+              <div className="flex flex-1 items-center">
+                <Roadmap />
+              </div>
+              <div className="text-center">
+                <Tiny>Clarity Roadmaps</Tiny>
+              </div>
+            </div>
+            <div className="flex py-3 flex-col items-center rounded-sm dark:bg-d-button-background dark:bg-opacity-20">
+              <div className="flex flex-1 items-center">
+                <Build />
+              </div>
+              <div className="text-center">
+                <Tiny>Build Digital Products</Tiny>
+              </div>
+            </div>
+            <div className="flex py-3 flex-col items-center rounded-sm dark:bg-d-button-background dark:bg-opacity-20">
+              <div className="flex flex-1 items-center">
+                <Amplify />
+              </div>
+              <div className="text-center">
+                <Tiny>Amplify Performance</Tiny>
+              </div>
+            </div>
+            <div className="flex py-3 flex-col items-center rounded-sm dark:bg-d-button-background dark:bg-opacity-20">
+              <div className="flex flex-1 items-center">
+                <Tailored />
+              </div>
+              <div className="text-center">
+                <Tiny>Tailor-made Solutions</Tiny>
+              </div>
+            </div>
+          </div>
           <div className="my-5">
             <Text>
               Our deliberate pursuit states that,{" "}
@@ -170,7 +223,11 @@ export default function Home() {
                 Be it server-side systems, OS & Infrastructure level
                 virtualization(s), automating your app(s) using Continuous
                 Integration and Development, or generating cloud first
-                strategies <u>ensuring maximum scalability at minimum cost</u>.
+                strategies{" "}
+                <span className="dark:text-d-primary-text font-bold">
+                  ensuring maximum scalability at minimum cost
+                </span>
+                .
               </Text>
             </div>
             <div className="mb-8">
@@ -195,12 +252,12 @@ export default function Home() {
         <div className="md:w-10/12">
           <div className="my-5">
             <SubHeading>
-              <span className="font-secondary font-medium dark:text-d-primary-text">
+              <div className="border-l-4 dark:border-d-button-background pl-3 md:pl-5 font-secondary font-medium dark:text-d-primary-text">
                 We're your product's first users, a team of advisors helping you
                 prioritize enablers and blockers, and a call-to-action
                 integrated development team hell-bent on turning your ideas to
                 favorable outcomes.
-              </span>
+              </div>
             </SubHeading>
           </div>
           <Text>
@@ -222,7 +279,7 @@ export default function Home() {
       <div className="my-10">
         <Divider />
       </div>
-      <div className="md:w-9/12 mx-auto">
+      <div className="md:w-9/12 mx-auto" id="contact">
         <div className="text-center">
           <div className="lg:w-8/12 mx-auto">
             <SubHeading>
