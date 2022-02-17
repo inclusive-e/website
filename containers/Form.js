@@ -77,7 +77,7 @@ const Form = () => {
       </div>
       <div className="my-3">
         <textarea
-          placeholder="Give us a brief about your idea."
+          placeholder="Ideas matter, we're a product of one. Tell us all about it."
           value={project_brief}
           name="project_brief"
           onChange={e => setBrief(e.target.value)}
@@ -88,7 +88,7 @@ const Form = () => {
       <div className="my-5">
         <Button type="submit" disabled={isLoading}>
           {isLoading ? (
-            <div className="py-2 mx-12">
+            <div style={{ margin: "8px 42px" }}>
               <Loading />
             </div>
           ) : (
