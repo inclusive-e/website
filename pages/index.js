@@ -43,7 +43,14 @@ export default function Home() {
           </div>
           <div>
             <Tiny alt>
-              <u className="cursor-pointer">Our Portfolio</u>
+              <Link
+                href="https://pitch-atinclusive.s3.us-east-2.amazonaws.com/Pitch.pdf"
+                passHref
+              >
+                <a target="_blank">
+                  <u className="cursor-pointer">Our Portfolio</u>
+                </a>
+              </Link>
             </Tiny>
           </div>
         </div>
@@ -55,20 +62,22 @@ export default function Home() {
           </div>
           <div className="mt-3">
             <Tiny>
-              Don’t just design the product and build the whole thing.
+              Don't just design the product and build the whole thing.
             </Tiny>
-            <Text>
-              <span className="font-bold dark:text-d-primary-text">
-                Ship often. Get early feedback. Iterate{" "}
-                <span
-                  className="line-through dark:text-d-secondary-text"
-                  style={{ textDecorationThickness: 4 }}
-                >
-                  quickly
-                </span>{" "}
-                wisely.
-              </span>
-            </Text>
+            <div className="mt-3 lg:mt-1">
+              <Text>
+                <span className="font-bold dark:text-d-primary-text">
+                  Ship often. Get early feedback. Iterate{" "}
+                  <span
+                    className="line-through dark:text-d-secondary-text"
+                    style={{ textDecorationThickness: 4 }}
+                  >
+                    quickly
+                  </span>{" "}
+                  wisely.
+                </span>
+              </Text>
+            </div>
           </div>
         </div>
         <div className="lg:flex-1 order-0 lg:order-1">
@@ -104,6 +113,9 @@ export default function Home() {
               </Link>{" "}
               👋
             </Tiny>
+          </div>
+          <div className="my-10 lg:hidden">
+            <Divider />
           </div>
         </div>
       </div>
@@ -269,8 +281,11 @@ export default function Home() {
             <span className="dark:text-d-primary-text font-bold">
               Learning from them, Building with them,
             </span>{" "}
-            <Link passHref href="/">
-              <a className="text-d-accent underline font-bold">
+            <Link
+              passHref
+              href="https://pitch-atinclusive.s3.us-east-2.amazonaws.com/Pitch.pdf"
+            >
+              <a target="_blank" className="text-d-accent underline font-bold">
                 check out some of the work, experience, expertise, and how we
                 can collaborate.
               </a>
@@ -318,17 +333,17 @@ export default function Home() {
           </div>
           <div className="order-0 lg:order-1">
             <div className="flex flex-row space-x-4">
-              <Link href="/" passHref>
+              <Link href="mailto:team@atinclusive.com" passHref>
                 <a target="_blank">
-                  <LinkedIn />
+                  <Gmail />
                 </a>
               </Link>
-              <Link href="/" passHref>
+              <Link href="https://twitter.com/atinclusive" passHref>
                 <a target="_blank">
                   <Twitter />
                 </a>
               </Link>
-              <Link href="/" passHref>
+              <Link href="https://github.com/inclusive-e" passHref>
                 <a target="_blank">
                   <Github />
                 </a>
