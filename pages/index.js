@@ -73,7 +73,7 @@ export default function Home() {
         </div>
         <div className="lg:flex-1 order-0 lg:order-1">
           <Text>
-            Together, We witness our generation and our times. The{" "}
+            The{" "}
             <b className="dark:text-d-primary-text">
               <span
                 className="line-through"
@@ -94,7 +94,10 @@ export default function Home() {
             </b>{" "}
             in everything that we do.
           </Text>
-          <div className="my-5">
+          <div className="my-2">
+            <Tiny>Together, We witness our generation and our times.</Tiny>
+          </div>
+          <div className="mb-5">
             <Tiny alt>
               <Link href="#contact">
                 <u className="cursor-pointer">Come work with us.</u>
