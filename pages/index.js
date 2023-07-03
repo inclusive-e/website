@@ -44,7 +44,7 @@ export default function Home() {
           <div>
             <Tiny alt>
               <Link
-                href="https://pitch-atinclusive.s3.us-east-2.amazonaws.com/Pitch.pdf"
+                href="https://portfolio.atinclusive.com/inclusive.pdf"
                 passHref
               >
                 <a target="_blank">
@@ -283,7 +283,7 @@ export default function Home() {
             </span>{" "}
             <Link
               passHref
-              href="https://pitch-atinclusive.s3.us-east-2.amazonaws.com/Pitch.pdf"
+              href="https://portfolio.atinclusive.com/inclusive.pdf"
             >
               <a target="_blank" className="text-d-accent underline font-bold">
                 check out some of the work, experience, expertise, and how we
